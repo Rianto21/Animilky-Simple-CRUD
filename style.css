@@ -1,0 +1,316 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(to top right, violet, rgb(19, 59, 190));
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: vh; */
+}
+
+.content-container {
+  min-height: 100vh;
+  position: relative;
+  background-color: cornsilk;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.titletext {
+  color: cornsilk;
+  font-size: 1.5rem;
+  margin-bottom: 1.5vh;
+}
+
+.wellcome {
+  color: aliceblue;
+  margin-top: 1.5vh;
+}
+
+.slogan {
+  margin-top: -0.75rem;
+  color: tomato;
+}
+
+/* .slogan:hover {
+  text-align: center;
+} */
+
+.lupa{
+  color: aliceblue;
+}
+
+::placeholder {
+  color: rgba(255, 248, 220, 0.5);
+}
+
+/* ::placeholder:focus, ::placeholder:hover {
+  color: rgb(255, 255, 255);
+} */
+.cc {
+  background: rgb(28, 29, 34) !important;
+  padding-bottom: 2vh;
+  /* margin-bottom: 10vh; */
+}
+
+input[type=text], input[type=password] {
+  border: solid rgba(218, 218, 218, 0.5);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  color: cornsilk;
+  transition: ease-in-out 0.5s;
+  box-shadow: none !important;
+  height: 5.5vh;
+
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  border-color: tomato;
+  background-color: rgba(19, 19, 19, 0.5);
+  color: cornsilk;
+  box-shadow: none !important;
+  outline: none;
+}
+
+input[type=button] {
+  border: solid rgba(0, 45, 97, 0.75);
+  background-color: transparent;
+  border-radius: 100vh;
+  max-width: 10rem;
+  font-size: 1.1rem;
+  height: 6vh;
+  color: tomato;
+  transition: ease-in-out 0.3s;
+}
+
+input[type=button]:focus, input[type=button]:hover {
+  border-color: tomato;
+  color: aliceblue;
+  font-size: 1.025rem;
+}
+
+input:focus::placeholder {
+  color: cornsilk;
+  transition: ease-in-out 0.3s;
+}
+
+#film_id_up {
+  background-color: transparent;
+  color: gray;
+}
+
+select {
+  border: solid rgba(218, 218, 218, 0.5) !important;
+  background-color: transparent !important;
+  border-radius: 100vh !important;
+  color: cornsilk !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: ease-in-out 0.3s !important;
+}
+
+select:focus, select:active {
+  border-color: tomato !important;
+  background-color: transparent !important;
+  border-radius: 100vh !important;
+  color: cornsilk !important;
+}
+
+.selected option {
+  background: rgb(46, 46, 46);
+}
+
+.form-group {
+  margin-bottom: 1.5vh;
+}
+
+#response {
+  color: tomato;
+  position: relative;
+  font-size: 0.75rem;
+  margin: auto;
+  /* padding: -0.75rem; */
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.otheraccount img {
+  max-width: 2rem;
+  border: solid grey 2px;
+  border-radius: 0.5rem;
+  transition: ease-in-out 0.3s;
+}
+.otheraccount img:hover{
+  border-color: rgb(28, 56, 88);
+}
+
+.otherlogin {
+  color: white;
+}
+
+/* .register {
+  color: white;
+} */
+
+.register {
+  color: white;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+
+.register:hover {
+  color: tomato;
+}
+
+.anime-image{
+  background-image: url("images/bganime.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover; 
+}
+
+.under {
+  height: 20vh;
+}
+
+.footer-basic {
+  padding:40px 0;
+  background-color: rgba(10, 5, 92, 0.295);
+  color: cornsilk;
+  margin-top: auto;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1.5px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  transition: ease-in-out 0.3s;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: tomato;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+tr {
+  vertical-align: middle;
+}
+
+.watermark {
+  position: relative;
+  float: right;
+  right: -2.5vh;
+  bottom: 10vh;
+  border: solid grey 3px;
+  border-radius: 5vh;
+  transition: ease-in-out 0.3s;
+}
+
+.watermark a {
+  text-decoration: none;
+  margin: 1rem 1rem;
+  color: rgba(252, 252, 252, 0.5);
+  transition: ease-in-out 0.3s;
+
+}
+
+.watermark a:hover {
+  color: tomato;
+}
+
+.watermark:hover {
+  border-color: tomato;
+}
+
+@media screen and (min-width: 768px) {
+  .cc {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cc {
+    margin: 0 auto !important;
+    /* min-height: 100%; */
+  }
+ 
+}
+
+.crudtitle h2 {
+  color: cornsilk;
+  font-size: 2.25rem;
+}
